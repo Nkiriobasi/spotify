@@ -2,26 +2,100 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #000000b3;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  height: 100%;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: none;
+  line-height: 1.6;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 600px;
+  min-width: 800px;
+  width: 100%;
+  color: #b3b3b3;
+  text-transform: none;
+  overflow: hidden;
+}
+
+.left-nav { grid-area: left-nav; }
+.main-view { grid-area: main-view; }
+.now-playing-bar { grid-area: now-playing-bar; }
+
+.grid-container {
+  display: grid;
+  gap: 8px;
+  grid-template-areas:
+    "left-nav main-view main-view"
+    "now-playing-bar now-playing-bar now-playing-bar";
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr auto;
+}
+
+.buttonTertiary {
+  font-size: 15px;
+  font-weight: 700;
+  background-color: transparent;
+  border: 0px;
+  border-radius: 500px;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  vertical-align: middle;
+  color: #a7a7a7;
+  padding: 8px 32px 8px 8px;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.buttonPrimary {
+  font-size: 15px;
+  font-weight: 700;
+  background-color: transparent;
+  border: 0px;
+  border-radius: 500px;
+  cursor: pointer;
+  display: inline-flex;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  vertical-align: middle;
+  padding: 8px 32px;
+  background-color: #ffffff;
+  color: #000;
+}
+
+.custom_hover_effect {
+  transition-duration: 33ms;
+  transition-property: background-color, border-color, color, box-shadow, filter, transform;
+  user-select: none;
+  vertical-align: middle;
+  transform: translate3d(0px, 0px, 0px);
+}
+.custom_hover_effect:hover {
+  transform: scale(1.04);
+  border-color: #fff;
 }

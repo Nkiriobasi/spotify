@@ -1,0 +1,9 @@
+.transform {
+    transform: translate3d(232px, 172px, 0px);
+}
+.boxShadow {
+    box-shadow: 0 16px 24px rgba(0,0,0,.3), 0 6px 8px rgba(0,0,0,.2);
+}
+.maxHeight {
+    max-height: calc(100vh - 24px);
+}
