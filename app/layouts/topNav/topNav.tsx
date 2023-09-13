@@ -12,7 +12,7 @@ const TopNav = () => {
     const { canGoBack, canGoForward } = useBrowserHistory();
 
   return (
-    <div className="main-view h-[64px] min-w-0 z-10">
+    <section className="main-view h-[64px] min-w-0 z-10">
         <header 
             className="bg-[#121212] w-full h-[64px] relative p-4 flex items-center 
             justify-between gap-2 rounded-tl-lg rounded-tr-lg" 
@@ -86,7 +86,7 @@ const TopNav = () => {
                 </div>
             </>
         </header>
-    </div>
+    </section>
   )
 }
 
