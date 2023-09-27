@@ -12,7 +12,7 @@ const TopNav = () => {
     const { canGoBack, canGoForward } = useBrowserHistory();
 
   return (
-    <section className="main-view h-[64px] min-w-0 z-10">
+    <section className="main-view h-[64px] min-w-0 z-10 w-full">
         <header 
             className="bg-[#121212] w-full h-[64px] relative p-4 flex items-center 
             justify-between gap-2 rounded-tl-lg rounded-tr-lg" 
@@ -81,8 +81,16 @@ const TopNav = () => {
                 <div></div>
             
                 <div className="pointer-events-auto flex items-center">
-                    <button className="buttonTertiary hover:opacity-60 duration-300">Sign up</button>
-                    <button className="buttonPrimary hover:opacity-60 duration-300">Log in</button>
+                    <button className="buttonTertiary hover:opacity-60 duration-300">
+                        <span className='text-inherit'>
+                            Sign up
+                        </span>
+                    </button>
+                    <button className="buttonPrimary custom_hover_effect">
+                        <span className="buttonInnerText">
+                            Log in
+                        </span>
+                    </button>
                 </div>
             </>
         </header>

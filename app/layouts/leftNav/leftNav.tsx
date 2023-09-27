@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const LeftNav = () => {  
   return (
-    <div className="left-nav flex flex-col min-h-0 relative w-[280px] z-10">
+    <section className="left-nav flex flex-col min-h-0 relative w-[280px] z-10 h-full">
         <nav className="gap-2 h-full flex flex-col min-h-0">
             <div className="bg-[#121212] cursor-default rounded-lg">
                 <div className="flex">
@@ -45,7 +45,7 @@ const LeftNav = () => {
                     </div>
                     <div className="mb-[32px] px-6">
                         <button 
-                            className="text-sm font-bold bg-transparent rounded-[500px] cursor-pointer relative text-center 
+                            className="text-[13px] font-bold bg-transparent rounded-[500px] cursor-pointer relative text-center 
                             custom_hover_effect py-[3px] pr-[15px] pl-[32px] border border-solid border-[#727272] 
                             text-[#fff] inline-flex items-center justify-center min-h-[32px]"
                         >
@@ -58,7 +58,7 @@ const LeftNav = () => {
                 </div>
             </div>
         </nav>
-    </div>
+    </section>
   )
 }
 
