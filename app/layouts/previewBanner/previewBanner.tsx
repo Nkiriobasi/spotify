@@ -2,7 +2,7 @@ import React from 'react'
 
 const PreviewBanner = () => {
   return (
-    <div className='now-playing-bar w-full z-10'>
+    <div className='now-playing-bar w-full'>
         <footer className="w-full flex flex-col h-auto min-w-[620px] select-none">
             {/* Preview Banner */}
             <div 

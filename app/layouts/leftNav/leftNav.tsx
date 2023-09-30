@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const LeftNav = () => {  
   return (
-    <section className="left-nav flex flex-col min-h-0 relative w-[280px] z-10 h-full">
+    <section className="left-nav flex flex-col min-h-0 relative w-[280px] h-full">
         <nav className="gap-2 h-full flex flex-col min-h-0">
             <div className="bg-[#121212] cursor-default rounded-lg">
                 <div className="flex">
