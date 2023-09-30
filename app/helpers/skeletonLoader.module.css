@@ -1,0 +1,53 @@
+.oneLinerBigType_container {
+  width: 100%;
+  height: 100%;
+  border-radius: 45px;
+  background-color: #4b4848;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+.doubleSectionType_container {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  padding: 24px 5% 24px 35%;
+  border-radius: 3px;
+  position: relative;
+  background-color: #4b4848;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+.oneLinerSmallType_container {
+  width: 100%;
+  height: 100%;
+  border-radius: 45px;
+  background-color: #4b4848;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.cardLoaderType_container {
+  -webkit-box-flex: 1;
+  background: #181818;
+  border-radius: 8px;
+  -ms-flex: 1;
+  flex: 1;
+  isolation: isolate;
+  padding: 16px;
+  position: relative;
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+  animation: pulse 1.5s infinite ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+  
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
